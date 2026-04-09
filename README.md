@@ -32,7 +32,7 @@ The project includes:
 ## Python Application 
 The Python CLI connects to MySQL and provides these features:
 - Add customer
-- Search for customer by name
+- Search customer by name
 - View active contracts
 - View unpaid / overdue invoices
 - Generate invoice
@@ -59,29 +59,29 @@ Typical workflow:
 - mysql-connector-python
 
 ## Project Files
-- `Create Table.sql`
-- `Sample Data.sql`
-- `Indexes.sql`
-- `Views.sql`
-- `Procedures.sql`
-- `Functions.sql`
-- `Triggers.sql`
-- `Security and Admin.sql`
+- `01. Create Table.sql`
+- `02. Sample Data.sql`
+- `03. Indexes.sql`
+- `04. Views.sql`
+- `05. Procedures.sql`
+- `06. Functions.sql`
+- `07. Triggers.sql`
+- `08. Security and Admin.sql`
 - `customer_contract_manager.py`
 
 ## How to Run
 
-### 1. Run SQL scripts in this order
-1. `Create Table.sql`
-2. `Sample Data.sql`
-3. `Indexes.sql`
-4. `Views.sql`
-5. `Procedures.sql`
-6. `Functions.sql`
-7. `Triggers.sql`
-8. `Security and Admin.sql`
-
-### 2. Run the Python app
+### 1. Execute the SQL scripts in the following order
+- `01. Create Table.sql`
+- `02. Sample Data.sql`
+- `03. Indexes.sql`
+- `04. Views.sql`
+- `05. Procedures.sql`
+- `06. Functions.sql`
+- `07. Triggers.sql`
+- `08. Security and Admin.sql`
+  
+### 2. Run the Python app 
 Install dependency:
 ```bash
 pip install mysql-connector-python
