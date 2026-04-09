@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.vscode/
+reports/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.zip

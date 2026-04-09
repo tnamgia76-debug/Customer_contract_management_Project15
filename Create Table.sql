@@ -1,0 +1,2 @@
+USE mydb;
+SHOW TABLES;
