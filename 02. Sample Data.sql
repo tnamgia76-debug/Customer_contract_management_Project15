@@ -1,6 +1,15 @@
 -- Sample data for Project 15: Customer and Contract Management System
 -- Generated automatically: 510 rows for each table
 USE `mydb`;
+SET FOREIGN_KEY_CHECKS = 0;
+TRUNCATE TABLE `Payments`;
+TRUNCATE TABLE `Invoices`;
+TRUNCATE TABLE `ContractServices`;
+TRUNCATE TABLE `Contracts`;
+TRUNCATE TABLE `Services`;
+TRUNCATE TABLE `Customers`;
+SET FOREIGN_KEY_CHECKS = 1;
+
 INSERT INTO `Customers` (`CustomerName`, `Address`, `PhoneNumber`, `Email`) VALUES
 ('Customer 1', '101 Ha Noi', '0910000001', 'customer1@example.com'),
 ('Customer 2', '102 Ho Chi Minh City', '0910000002', 'customer2@example.com'),
@@ -3086,11 +3095,3 @@ UNION ALL SELECT 'ContractServices', COUNT(*) FROM ContractServices
 UNION ALL SELECT 'Invoices', COUNT(*) FROM Invoices
 UNION ALL SELECT 'Payments', COUNT(*) FROM Payments;
 
-USE mydb;
-
-SELECT COUNT(*) FROM Customers;
-SELECT COUNT(*) FROM Services;
-SELECT COUNT(*) FROM Contracts;
-SELECT COUNT(*) FROM ContractServices;
-SELECT COUNT(*) FROM Invoices;
-SELECT COUNT(*) FROM Payments;
