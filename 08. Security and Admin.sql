@@ -32,9 +32,6 @@ SET DEFAULT ROLE finance_role TO 'finance_user'@'localhost';
 SET DEFAULT ROLE admin_role TO 'admin_user'@'localhost';
 
 -- 4. Optional encryption demo
-ALTER TABLE Contracts DROP COLUMN IF EXISTS TotalValueEncrypted;
-ALTER TABLE Payments DROP COLUMN IF EXISTS AmountEncrypted;
-
 ALTER TABLE Contracts
 ADD COLUMN TotalValueEncrypted VARBINARY(255) NULL;
 
