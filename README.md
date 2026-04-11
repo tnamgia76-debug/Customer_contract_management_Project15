@@ -86,6 +86,14 @@ Install dependency:
 ```bash
 pip install mysql-connector-python
 ```
+Before running the app, update the MySQL connection settings in 'customer_contract_manager.py' with your actual MySQL password.
+DB_CONFIG = {
+    "host": "localhost",
+    "user": "root",
+    "password": "your_mysql_password",
+    "database": "mydb",
+}
+
 Run:
 ```bash
 python customer_contract_manager.py
