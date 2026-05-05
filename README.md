@@ -126,6 +126,7 @@ Use the following demo accounts created by 08. Security and Admin.sql:
 1. sales_user   -> Sales@123
 2. finance_user -> Finance@123
 3. admin_user   -> Admin@123
+   
 These accounts are for local demonstration only.
 
 ## Backup and Recovery
